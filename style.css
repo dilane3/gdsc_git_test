@@ -16,14 +16,14 @@ body {
     border-radius: 7px;
     background-color: #fff;
     box-shadow: 0 2px 4px #c4c4c4;
-    padding: 20px 2px 2px 2px;
+    padding: 20px 5px 5px 5px;
 }
 
 h3 {
     width: 100%;
     text-align: center;
     font-size: 20px;
-    color: #3e4bff;
+    color: #6972f8;
     margin-top: 0;
 }
 
@@ -35,10 +35,11 @@ ul {
     overflow-y: scroll;
     overflow-x: hidden;
     margin-bottom: 0;
-    scrollbar-width: thin;
+    scrollbar-width: none;
 }
 
 li {
+    position: relative;
     list-style: none;
     width: all;
     height: 70px;
@@ -48,4 +49,12 @@ li {
     display: flex;
     align-items: center;
     padding-left: 20px;
+    transition: transform .3s ease-in-out, border .2s ease-in-out;
+}
+
+li:hover {
+    transform: scale(.98);
+    border-left: 5px solid #6972f8;
+    color: #6972f8;
+    font-weight: 700;
 }
